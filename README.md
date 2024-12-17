@@ -5,6 +5,7 @@ HOST均为amd64，target支持amd64 i386 arm aarch64
 
 ## 用法
 直接将对应架构的二进制改名为`afl-qemu-trace`放在afl++根目录即可，之后afl-fuzz使用`-Q`开启。
+如需qasan，同理改名为`libqasan.so`放在afl++根目录即可
 
 ## attention
 在fuzz之前可以先用afl-qemu-trace尝试跑一下二进制，用法跟qemu-user-xx一致
